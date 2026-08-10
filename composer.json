@@ -1,0 +1,64 @@
+{
+    "name": "abdogoda/laravel-notification-system",
+    "description": "Production-ready, highly extensible multi-channel notification package for Laravel by Abdulrhman Goda.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://abdogoda.github.io/AG/",
+    "keywords": [
+        "laravel",
+        "notifications",
+        "fcm",
+        "whatsapp",
+        "email",
+        "database",
+        "multi-tenant",
+        "multi-guard",
+        "abdulrhman-goda"
+    ],
+    "authors": [
+        {
+            "name": "Abdulrhman Goda",
+            "homepage": "https://abdogoda.github.io/AG/",
+            "role": "Creator & Lead Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/notifications": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/database": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/queue": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/view": "^10.0|^11.0|^12.0|^13.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationSystem\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationSystem\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NotificationSystem\\NotificationSystemServiceProvider"
+            ],
+            "aliases": {
+                "NotificationSystem": "NotificationSystem\\Facades\\NotificationSystem"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

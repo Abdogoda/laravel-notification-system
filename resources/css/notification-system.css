@@ -1,0 +1,18 @@
+/* Notification System Package Standalone CSS */
+
+.notif-card {
+    transition: all 0.2s ease-in-out;
+}
+
+.notif-card.notification-unread {
+    background-color: rgba(79, 70, 229, 0.05);
+    border-inline-start: 4px solid #4f46e5;
+}
+
+.notif-badge-unread {
+    background-color: #ef4444;
+    color: #ffffff;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 9999px;
+}
